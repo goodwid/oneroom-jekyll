@@ -12,7 +12,7 @@
         {% for node in site.pages %}
           {% if node.nav == true %}
 
-              <span><a href='{{node.permalink}}'>{{node.title}}</a></span>
+              <span><a href="{{site.baseurl}}{% link {{node.path}} $}">{{node.title}}</a></span>
             {% endif %}
 
         {% endfor %}
