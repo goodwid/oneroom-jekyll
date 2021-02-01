@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        {% for node in site.pages %}
+          {% if node.nav == true %}
+            <span><a href='{{node.url}}'>{{node.title}}</a></span>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      <p class="title">{{ site.title }}</p>
+      <div class="header-cta"><a href="/contact/">Get Started!</a></div>
+    </header>
+    <section class="content">
+      {{ content }}
+    </section>
+    <footer>
+      &copy; to me
+    </footer>
+  </body>
+</html>
