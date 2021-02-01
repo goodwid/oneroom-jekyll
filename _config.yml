@@ -22,7 +22,7 @@ title: One Room Art House
 email: andrearosselle@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a Jekyll re-hash of "https://oneroomarthouse.com"
-baseurl: "/oneroom-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "/oneroom-jekyll/" # the subpath of your site, e.g. /blog
 url: "https://goodwid.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: goodwid
 github_username: goodwid
