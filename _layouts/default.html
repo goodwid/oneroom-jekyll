@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{site.baseurl}}styles/styles.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/styles/styles.css">
   </head>
   <body>
     <header>
@@ -12,7 +12,9 @@
         {% for node in site.pages %}
           {% if node.nav == true %}
 
-              <span><a href="{{site.baseurl}}{% link {{node.path}} $}">{{node.title}}</a></span>
+              <span>
+                <a href="{{site.baseurl}}/{{node.permalink}}">{{node.title}}</a>
+              </span>
             {% endif %}
 
         {% endfor %}
